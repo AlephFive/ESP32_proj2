@@ -2,6 +2,13 @@
 
 There are two parts to this project. The ESP32 code, which sends controller data to the computer via serial, and the Loading Simulator 2022 game itself, which interprets the controller data and responds to it.
 
+### Loading Simulator 2022 interface
+![Loading screen](https://user-images.githubusercontent.com/6265129/157605167-266e482e-3f3b-49db-b4cd-2dffccc8f89a.jpg)
+
+### Controller
+![PXL_20220310_053957084](https://user-images.githubusercontent.com/6265129/157605463-1f0cfcb0-42dd-4470-8b3b-6d4e4f52e94a.jpg)
+![PXL_20220310_054018956](https://user-images.githubusercontent.com/6265129/157605483-61067e94-b514-43bd-8122-a84fa1742c05.jpg)
+
 
 ## How to run Loading Simulator 2022
 To run Loading Simulator 2022, simply open "index.html" in a browser that supports web serial e.g. Google Chrome. The system accepts data in JSON format with 4 data fields so you can build your own custom controller:
@@ -24,7 +31,9 @@ Turning the potentiometer changes the loading bar "redness".
 
 
 ## How to run ESP32 code:
-The ESP32 code constantly sends sensor data via serial every 10ms.
+The ESP32 code constantly sends sensor data via serial every 10ms. Pin number and connected components are as follows:
+
+![PXL_20220307_210900644](https://user-images.githubusercontent.com/6265129/157605316-7e253796-1d6b-4689-ac29-9e982f3b22d1.jpg)
 
 We are using the Arduino IDE. To enable IDE support for the ESP32, first open up Preferences and under "Additional Boards Manager URLs", add the following URL:
 ```
