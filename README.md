@@ -31,7 +31,7 @@ Turning the potentiometer changes the loading bar "redness".
 
 
 ## How to run ESP32 code:
-The ESP32 code constantly sends sensor data via serial every 10ms. Pin number and connected components are as follows:
+The code to run is under the inputTester folder. The ESP32 code constantly sends sensor data via serial every 10ms. Pin number and connected components are as follows:
 
 ![PXL_20220307_210900644](https://user-images.githubusercontent.com/6265129/157605316-7e253796-1d6b-4689-ac29-9e982f3b22d1.jpg)
 
