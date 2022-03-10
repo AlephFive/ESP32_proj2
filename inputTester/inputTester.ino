@@ -22,12 +22,12 @@ void setup() {
 }
 
 void loop(){
-  Serial.println("**********************");
-  Serial.println("Button Val:" + String(digitalRead(BTNPIN)));
-  Serial.println("Joy X:" + String(analogRead(JOY_X)));
-  Serial.println("Joy Y:" + String(analogRead(JOY_Y)));
-  Serial.println("POT:" + String(analogRead(POT)));
-  delay(1000);
+  //Serial.println("**********************");
+  Serial.println("{\"b\":" + String(digitalRead(BTNPIN))+ ",\"x\":" + String(analogRead(JOY_X)) + ",\"y\":" + String(analogRead(JOY_Y)) + ",\"p\":" + String(analogRead(POT)) + "}");
+  //Serial.println("Joy X:" + );
+  //Serial.println("Joy Y:" + String(analogRead(JOY_Y)));
+  //Serial.println("POT:" + String(analogRead(POT)));
+  delay(50);
   
 
   
